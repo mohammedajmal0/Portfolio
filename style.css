@@ -358,4 +358,9 @@ html {
  .insta:hover{
   color: rgb(104, 3, 57);
  }
- 
+   /* ------------------projects-------------------- */
+   .projects{
+    display: flex;
+    height: 86vh;
+    border: 2px solid red;
+   }
