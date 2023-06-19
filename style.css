@@ -109,6 +109,7 @@ nav ul li a:hover {
             width: 90px;
             position: absolute;
             top: 85%;
+            top: 545px;
             left: 6.5%;
             transform: perspective(1em) rotateX(40deg) scale(1,0.4);
             filter: blur(1em);
@@ -120,7 +121,7 @@ nav ul li a:hover {
   font-weight: bolder;
 }
 .resume:hover::before{
-  top: 87%;
+  top: 545px;
   background-color: var(--secondary-color);
 
 }
@@ -352,7 +353,7 @@ html {
   color: #0804dd;
  }
  .gmail:hover{
-  color: rgb(255, 0, 0);
+  color: #ff2f19;
  }
  .insta:hover{
   color: rgb(104, 3, 57);
