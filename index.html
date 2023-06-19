@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Protfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/software-download.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Ajmal's Portfolio</div>
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <div class="right">
+                <ul>
+                    <li><a href=#home class="animation_hrefs">home</a></li>
+                    <li><a href=#about class="animation_hrefs">about</a></li>
+                    <!-- <li><a href="/">services</a></li> -->
+                    <li><a href="/" class="animation_hrefs">projects</a></li>
+                    <li><a href="/" class="animation_hrefs">contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection" id="home">
+            <div class="leftsection">Hello, it's Me
+                <br><span class="purple">Ajmal</span>
+
+                <div>I am a Passionate</div>
+                <span id="element"></span>
+                <div class="socialmedia-links">
+                    <a href="https://www.linkedin.com/in/mohammed-ajmal-husainnaikar-96a13a25a/"><i class='bx bxl-linkedin linkedin'></i></a>
+                    <a href="https://www.instagram.com/_ajmal_002/"><i class='bx bxl-instagram insta'></i></a>
+                    <a href="https://mail.google.com/mail/u/mohammedajmal007.0@gmail.com" class="gmail"><i class='bx bxl-gmail gmail'></i></a>
+                    <a href="#"><i class='bx bxl-github'></i></a>
+                </div>
+                <div class="downloadResume">
+                    <!-- <button class="resume" role="button">Resume</button> -->
+                    <a href="Ajmal Resume.pdf" download="Resume"><button class="resume" role="button">My Resume</button></a>
+                </div>
+            </div>
+            <div class="rightsection"><img src="dev.png" alt=""></div>
+        </section>
+        <!-- <section class="about" id="about">
+            <div class="aboutHeading">ABOUT ME</div>
+            
+            <div class="underline"></div>
+            <div class="basicinfo">Here You Will Find More Information About Me, What I Do, And My Current Skills Mostly In Terms Of Programming And Technology</div>
+            <div class="about_container">
+            <section class="about_leftsection">
+                <div class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro illum quod ducimus excepturi sed expedita aliquid blanditiis necessitatibus vel mollitia laudantium culpa, eveniet doloribus officia. Ut aperiam nulla voluptate expedita?</div>
+            </section>
+            <section class="about_rightsection"></section>
+            </div>
+        </section> -->
+
+
+        <!--  about section new pattern-->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about_column1">
+                        <img src="ai_dev.jpg" alt="" class="floating-image">
+                    </div>
+                    <div class="about_column2">
+                        <h1 class="sub-title">ABOUT ME</h1>
+                        <div class="underline"></div>
+                        <p style="text-align: center;">Here You Will Find More Information About Me, What I Do, And My Current Skills Mostly In Terms Of Programming And Technology besides this I am a Potential Learner</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                            <p class="tab-links" onclick="opentab('extras')">Extracurricular</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>App Development</span><br>Building Android/ios apps </li>
+                                <li><span>Web Development</span><br>Web app Development </li>
+                                <li><span>Languages</span><br>JAVA,Python,C,C++,HTML/CSS <br>Javascript,SQL </li>
+                                <li><span>Developer Tools</span><br>Android Studio,InteliJ Idea,VS code<br>Javascript,SQL </li>
+                                <!-- <li><span>UI/UX</span><br>Designing web app </li> -->
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span style="word-spacing: 3px;">B.E in Computer Science 2020-present</span><br>Bearys Institute of Technology <br>Score (1st-5th sem) : 8.27cgpa </li>
+                                <li><span>PU college</span><br>Shaheen PU college <br>score : 84.33% </li>
+                                <li><span>Secondary School</span><br>Mansoora English Medium school <br>score : 89.16% </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="extras">
+                            <ul>
+                                <li><span>Hackathon</span><br>shortlisted as top 50 among 1100 teams all over India <br>
+                                a 24 hours Hackathon organized by EG India in Collaboration with St.Joseph Engineering College </li>
+                                <li><span>Postman API course</span><br>Completed Postman Api certification course <br>conducted by 
+                                NITK-Surathkal in Collaboration with Postman </li>
+                                <!-- <li><span>UI/UX</span><br>Designing web app </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i>Web</i> Developer', '<i>Android</i> Developer', 'Problem Solver'],
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true
+        });
+
+
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+    
+</html>
